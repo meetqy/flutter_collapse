@@ -1,7 +1,7 @@
 <!--
  * @Author: meetqy
  * @since: 2019-11-05 17:45:28
- * @lastTime: 2019-11-05 18:04:23
+ * @lastTime: 2019-11-06 09:50:48
  * @LastEditors: meetqy
  -->
 # flutter_collapse
@@ -10,10 +10,15 @@ flutter_collapse折叠面板
 
 ## 目录
 
+- [预览](#预览)
 - [使用](#使用)
 - [参数说明](#参数说明)
-- [如何贡献](#如何贡献)
+- [欢迎PR](#欢迎PR)
 - [使用许可](#使用许可)
+
+## 预览
+
+![](preview.gif)
 
 ## 使用说明
 
@@ -43,9 +48,9 @@ padding\<EdgeInsets> | 内边距 默认值：EdgeInsets.symmetric(vertical: 10, 
 
 [@meetqy](https://github.com/meetqy).
 
-## 如何贡献
+## 欢迎PR
 
-非常欢迎你的加入! [提一个Issue](https://github.com/meetqy/flutter_collapse/issues/new) 或者提交一个 Pull R equest.
+非常欢迎你的加入! [提一个Issue](https://github.com/meetqy/flutter_collapse/issues/new) 或者提交一个 Pull Request.
 
 ## 使用许可
 
