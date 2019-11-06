@@ -1,7 +1,7 @@
 /*
  * @Author: meetqy
  * @since: 2019-10-22 11:24:46
- * @lastTime: 2019-10-30 15:20:35
+ * @lastTime: 2019-11-06 11:39:10
  * @LastEditors: meetqy
  */
 import 'package:flutter/foundation.dart';
@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class AnimatedRotate extends ImplicitlyAnimatedWidget {
-
   /// 自定义旋转动画
   /// 参考：自带动画 AnimatedOpacity
   /// 详细注解查看  AnimatedOpacity
@@ -22,8 +21,8 @@ class AnimatedRotate extends ImplicitlyAnimatedWidget {
     @required this.rotate,
     Curve curve = Curves.linear,
     @required Duration duration,
-  }) : assert(rotate != null),
-       super(key: key, curve: curve, duration: duration);
+  })  : assert(rotate != null),
+        super(key: key, curve: curve, duration: duration);
 
   final Widget child;
 
@@ -39,13 +38,15 @@ class AnimatedRotate extends ImplicitlyAnimatedWidget {
   }
 }
 
-class _AnimatedRotateState extends ImplicitlyAnimatedWidgetState<AnimatedRotate> {
+class _AnimatedRotateState
+    extends ImplicitlyAnimatedWidgetState<AnimatedRotate> {
   Tween<double> _rotate;
   Animation<double> _rotateAnimation;
 
   @override
   void forEachTween(TweenVisitor<dynamic> visitor) {
-    _rotate = visitor(_rotate, widget.rotate, (dynamic value) => Tween<double>(begin: value));
+    _rotate = visitor(
+        _rotate, widget.rotate, (dynamic value) => Tween<double>(begin: value));
   }
 
   @override
@@ -62,4 +63,3 @@ class _AnimatedRotateState extends ImplicitlyAnimatedWidgetState<AnimatedRotate>
     );
   }
 }
-
